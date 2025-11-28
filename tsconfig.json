@@ -19,7 +19,10 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+    
+    // ✅ Add this:
+    "esModuleInterop": true     // Allows default imports from CommonJS modules (needed for packages like express, morgan, etc.)
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
